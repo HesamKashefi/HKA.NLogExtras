@@ -35,7 +35,7 @@ public class PersianLongDateLayoutRenderer : LayoutRenderer
             ts = ts.ToUniversalTime();
         }
 
-        builder.Append(string.Format("{0}-{1}-{2}-{3}:{4:D2}-{5:D2}-{6:D2}.{7}",
+        builder.Append(string.Format("{0}-{1}-{2}-{3}:{4:D2}-{5:D2}-{6:D2}.{7:D3}",
             _pc.GetDayOfWeek(ts),
             _pc.GetYear(ts),
             _pc.GetMonth(ts),
